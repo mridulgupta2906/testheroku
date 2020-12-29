@@ -5,6 +5,7 @@ router.post("/",(req,res)=>{
 })
 
 router.post('/user',(req,res)=>{
+    console.log("entered here")
     res.status(200).json({status:200,message:"success",data:req.body})
 
 })
