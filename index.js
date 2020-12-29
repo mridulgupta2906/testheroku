@@ -3,9 +3,9 @@ const app=express();
 
 const bodyparser=require("body-parser");
 const { urlencoded } = require("body-parser");
-const route=require('./route')
+const route=require('./routes')
 
-app.use(bodyparser.extended({extended:true}))
+app.use(bodyparser.urlencoded({extended:true}))
 app.use(bodyparser.json());
 
 
